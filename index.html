@@ -46,7 +46,7 @@
 						Oui le titre est long comme le bras et on s'en excuse :)
 					</p>
 					<p>
-						Le titre porte implictement une partie des problèmes à résoudre.
+						Le titre porte implicitement une partie des problèmes à résoudre.
 					</p>
 				</section>
 
@@ -78,12 +78,18 @@
 					<h2>Une Usine Logicielle en environnement sensible</h2>
 					<p>Les exigences sont nombreuses dans un cas général</p>
 					<p>De nouvelles contraintes en environnement sensible</p>
+					<aside class="notes">Présenter le cas d'une usine logicielle, telle qu'on la trouverait chez un acteur sans contraintes majeures.
+						Et évoquer quelques contraintes qui viennent dans un environnement sensible
+					</aside>
 				</section>
 
 				<section>
 					<h2>Les exigences</h2>
 					<p>Un environnement niveau production</p>
 					<p>Respect des normes en place ou visées</p>
+					<aside class="notes">Des accès maîtrisés, Backup & Restore (sans restore un backup n'a pas de valeur), PRA / PCA.
+						Suivant les normes acquises ou visées, il y a aure des contraintes plus ou moins fortes, SecNumCloud > HDS > ISO27001 > De base 
+					</aside>
 				</section>
 
 				<section>
@@ -91,12 +97,19 @@
 					<p>Isolée de tous les autres environnements</p>
 					<p>Aussi souverain que possible</p>
 					<p>Surveillance des contenus externes</p>
+					<aside class="notes">L'usine doit être isolée de tous les autres envs, la souveraineté peut être un enjeur majeur si l'acteur est gouvernemental, l'ensemble des contenus externes, OS, outils, librairies, images docker sera à surveiller
+					</aside>
 				</section>
 
 				<section>
 					<h2>Exigences de production</h2>
+					<p>Administrateurs & Utilisateurs</p>
 					<p>Backup et Restore</p>
 					<p>Plan Reprise d'Activité</p>
+					<aside class="notes">Dans toute production, il y a 2 au moins roles, admins et utilisateurs, comme dans toute prod, chacun connaissances ses frontières de responsabilité. 
+						Une petite piqure de rappel sur les backups et sur la nécessité de faire des restores.
+						Plan de Reprise d'Activité, RPO : Fréquence des backups, ce peut-on perdre,  RTO : Délai pour relancer les services. On doit mettre le curseur au bon niveau, attentes vs moyens
+					</aside>
 				</section>
 
 				<section>
