@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Devops Rex 2025 - Mise en oeuvre de chaines industrielles pour la gestion d'un catalogue de services Cloud IAAS/PAAS contraintes par des normes de sécurité</title>
+
+		<meta name="description" content="REX sur la mise en oeuvre de chaines industrielles pour la gestion d'un catalogue de services Cloud IAAS/PAAS contraintes par des normes de sécurité">
+		<meta name="author" content="Henri Gomez">
+		<meta name="author" content="Renaud Fleury">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+      			<img class="conf-logo" src="assets/devops-rex.png" width="200" height="200" alt="Logo de la conférence">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<a href="https://www.devopsrex.fr/fr">
+						<img src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/661808031b198a6f267eb755/website/Logo-Devopsrex2024-avecaccroche3lignesdates-blancrouge_cf70c6e1-8bf0-4867-a27e-9d09b7537046.png" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>Mise en oeuvre de chaines industrielles pour la gestion d'un catalogue de services Cloud IAAS/PAAS contraintes par des normes de sécurité</h3>
+					<p>
+						<small>Présenté par <a href="https://www.devopsrex.fr/fr/liste-des-conferenciers/67052c7d63864173c54be49d">Renaud Fleury (Sopra Group)</a> et <a href="https://www.devopsrex.fr/fr/liste-des-conferenciers/67052c7d63864173c54be49e">Henri Gomez (Wescale)</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Avant de commencer</h2>
+					<p>
+						Oui le titre est long comme le bras et on s'en excuse :)
+					</p>
+					<p>
+						Le titre porte implictement une partie des problèmes à résoudre.
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Qui sommes nous ?</h2>
+						<p>Mais qui sont les 2 présentateurs ?</p>
+						<br>
+					</section>
+
+					<section>
+						<h2>Renaud Fleury</h2>
+						<img src="https://mobicheckin-assets.s3.amazonaws.com/uploads/events/661808031b198a6f267eb755/guests/avatars/medium_OPVWFWZ_Renaud_Fleury.png" alt="Renaud Fleury" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						<p>Architecte d’entreprise depuis plus de 15 ans.</p>
+						<p>Il évolue depuis 2 ans en tant que PO/PM d'offres cloud souveraines françaises utilisant les concepts et pratiques devsecops</p>
+						<br>
+					</section>
+
+					<section>
+						<h2>Henri Gomez</h2>
+						<img src="https://mobicheckin-assets.s3.amazonaws.com/uploads/events/661808031b198a6f267eb755/guests/avatars/medium_6W7ERIE_HENRI_GOMEZ.jpeg" alt="Henri Gomez" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						<p>Henri travaille dans l’industrie logicielle depuis plus de 35 ans.</p>
+						<p>2/3 de sa carrière coté Dev, 1/3 coté Ops, la transition aura été la CI/CD.</p>
+						<br>
+					</section>
+				</section>
+
+				<section>
+					<h2>Une Usine Logicielle en environnement sensible</h2>
+					<p>Les exigences sont nombreuses dans un cas général</p>
+					<p>De nouvelles contraintes en environnement sensible</p>
+				</section>
+
+				<section>
+					<h2>Les exigences</h2>
+					<p>Un environnement niveau production</p>
+					<p>Respect des normes en place ou visées</p>
+				</section>
+
+				<section>
+					<h2>Les contraintes</h2>
+					<p>Isolée de tous les autres environnements</p>
+					<p>Aussi souverain que possible</p>
+					<p>Surveillance des contenus externes</p>
+				</section>
+
+				<section>
+					<h2>Exigences de production</h2>
+					<p>Backup et Restore</p>
+					<p>Plan Reprise d'Activité</p>
+				</section>
+
+				<section>
+					<h2>Contraintes de production</h2>
+					<p>Accès Restreint à l'environnement</p>
+					<p>SRE dédiés</p>
+				</section>
+
+				<section>
+					<h2>Exigence de respect des normes</h2>
+					<p>ISO : SMSI</p>
+					<p>HDS : Données personnelles</p>
+					<p>SecNumCloud : Pas de GitOps</p>
+				</section>
+
+				<section>
+					<h2>Contraintes d'isolation</h2>
+					<p>Accès à l'usine via VPN</p>
+					<p>Aucun accès à l'infrastructure</p>
+					<p>UI des services seulement</p>
+					<p>Mise à disposition des logs via Grafana</p>
+				</section>
+
+				<section>
+					<h2>Contraintes de souveraineté</h2>
+					<p>Priorité à des solutions Open Source</p>
+					<p>Préférence pour les solutions à gouvernance communautaire</p>
+					<p>Debian, Openstack, GitLab, Grafana</p>
+					<p>OnPrem plutôt que SaaS</p>
+				</section>
+
+				<section>
+					<h2>Contraintes sur les contenus externes</h2>
+					<p>OSINT sur l’ensemble des projets candidats</p>
+					<p>Dynamique du projet et risques</p>
+					<p>Projets de fondations / fédérations</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
