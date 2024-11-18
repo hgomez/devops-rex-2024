@@ -34,6 +34,7 @@
 					<a href="https://www.devopsrex.fr/fr">
 						<img src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/661808031b198a6f267eb755/website/Logo-Devopsrex2024-avecaccroche3lignesdates-blancrouge_cf70c6e1-8bf0-4867-a27e-9d09b7537046.png" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 					</a>
+				
 					<h3>Mise en oeuvre de chaines industrielles pour la gestion d'un catalogue de services Cloud IAAS/PAAS contraintes par des normes de sécurité</h3>
 					<p>
 						<small>Présenté par <a href="https://www.devopsrex.fr/fr/liste-des-conferenciers/67052c7d63864173c54be49d">Renaud Fleury (Sopra Group)</a> et <a href="https://www.devopsrex.fr/fr/liste-des-conferenciers/67052c7d63864173c54be49e">Henri Gomez (Wescale)</a></small>
@@ -59,9 +60,9 @@
 
 					<section>
 						<h2>Renaud Fleury</h2>
-						<img src="https://mobicheckin-assets.s3.amazonaws.com/uploads/events/661808031b198a6f267eb755/guests/avatars/medium_OPVWFWZ_Renaud_Fleury.png" alt="Renaud Fleury" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-						<p>Architecte d’entreprise depuis plus de 15 ans.</p>
-						<p>Il évolue depuis 2 ans en tant que PO/PM d'offres cloud souveraines françaises utilisant les concepts et pratiques devsecops</p>
+						<img src="https://talks.devopsdays.org/media/avatars/RFM_xZllexQ_thumbnail_default.jpg" alt="Renaud Fleury" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						<p>Field CTO chez SopraSteria</p>
+						<p>Il évolue depuis 7 ans en tant que PO/PM d'offres cloud souveraines françaises utilisant les concepts et pratiques devsecops</p>
 						<br>
 					</section>
 
@@ -74,191 +75,155 @@
 					</section>
 				</section>
 
-				<section>
-					<section>
-						<h2>Des contextes contraints</h2>
-						<p>Au cours des années, Renaud et Henri ont participé à bien des projets soumis à fortes contraintes</p>
-						<aside class="notes">Présenter le cas d'une usine logicielle, telle qu'on la trouverait chez un acteur sans contraintes majeures.
-							Et évoquer quelques contraintes qui viennent dans un environnement sensible
-						</aside>
-						<br>
-					</section>
-					
-					<section>
-						<h2>Contraintes de sécurité</h2>
-						<p>Pour des organisations gouvernementales</p>
-					</section>
-
-					<section>
-						<h2>Contraintes de conformités</h2>
-						<p>Pour des entreprises travaillant dans le domaine de la santé</p>
-					</section>
-
+				<section id="RexInformation">
+						<section id="ContextPrincipal-1">
+							<h3>Contexte de notre REX</h3>
+							<p class="fragment">Issu de situations bien réelles pour des organisations dont on doit taire le nom (NDA)</p>
+							<p class="fragment">Mettant en oeuvre des chaines devsecops tant pour construire des livrables binaires applicatifs que déployer des plate-formes de services cloud</p>
+						</section>
+						<section id="ContextPrincipal-2">
+							<h3>Répondant à des exigences et contraintes de sécurité fortes</h3>
+							<p class="fragment">EBIOS</p>
+							<p class="fragment">Critères DICP</p>
+							<p class="fragment">Sensibilité / Criticité de la donnée</p>
+							<p class="fragment">Respect de normes ISO 27001 & SecNumCloud</p>
+						</section>
+						<section id="ContextPrincipal-3">
+							<h4>Quel est donc le besoin de construire une plateforme devsecops pour un service cloud ?</h4>
+							<p class="fragment">Provisionner de l’infrastructure</p>
+							<p class="fragment">Déployer des services d'infrastructure</p>
+							<p class="fragment">Ah oui, mais pourquoi une chaine devsecops pour cela ?</p>
+							<p class="fragment">Afin de disposer d'environnement :</p> 
+							<p class="fragment">Reproductible et automatisé</p>
+							<p class="fragment">Auditable, répondant à des exigences de normes de sécurité style NIS</p>
+						</section>
+						<section id="ContextPrincipal-4"> 
+							<h4>En quoi les normes Executive Order de la maison Blanche, NIS, ISO 27001, ont-elles contribué à sécuriser la conception des chaines CICD ?</h4>
+							<p class="fragment">SBOM selon Executive Order</p>
+							<p class="fragment">Contrôles de provenance des sources et des fournisseurs selon NIS & NIS2</p>
+							<p class="fragment">Avoir des processus identifiés et mis en oeuvres au quotidien pour la supply chain pour l'iso 27001</p>
+						</section>
+						<section id="ContextPrincipal-5">
+							<h4>Peux-tu nous en dire plus sur la norme SecNumCloud ?</h4>
+							<p class="fragment">Qualification de sécurité dévelopée par l’ANSSI</p>
+							<p class="fragment">Deux acteurs bien différenciés : Prestataire & Bénéficiaire</p>
+							<p class="fragment">Avantages de la norme </p>
+							<p class="fragment">Points saillants nécessaires à l'obtention</p>
+							<p class="fragment">Principaux critères pour devenir homologable / certifiable SecNumCloud</p>
+						</section>
+						<section id="ContextPrincipal-6">
+							<h4>Peux tu nous rappeler les 3 typologies d'attaque référencées par l'ANSSI ?</h4>
+								<p class="fragment">Stratégique</p>
+								<p class="fragment">Systémique</p>
+								<p class="fragment">Activiste / Isolé </p>
+						</section>
 				</section>
-
-
-				<section>
-					<h2>Des exemples bien réels</h2>
-					<p>Dans ce REX, nous allons partagés quelques une de ces expériences, totalement anonymisées</p>
-					<aside class="notes">On explique qu'on va présenter des cas réels
-					</aside>
-					<br>
+				<section id="RexDomaine1">
+					<section id="Human-SupplyChain-1">
+						<h4>La place de l'humain dans la Supply Chain ? <br/> 80% des attaques ? Comment y remédier</h4>
+						<p class="fragment">Par la formation :</p>
+						<ul class="fragment">
+							<li class="fragment">Expliquer les types d'attaques sur la chaîne d'approvisionnement</li>
+							<li class="fragment">En donner une perspective suivant le contexte technique en place</li>
+							<li class="fragment">Détailler les mécanismes de protection mis en place (ou à venir) sur les chaînes CI/CD</li>
+							<li class="fragment">Former sur les réponses à apporter sur les alertes de sécurité</li>
+							<li class="fragment">Donner les clés de sélection de composants tiers</li>
+						</ul>
+					</section>
+					<section id="Human-SupplyChain-2">
+						<h4>La place de l'humain dans la Supply Chain ? <br/>80% des attaques ? Comment y remédier ? </h4>
+							<p class="fragment">Histoire de confiance et de contrôles</p>
+							<p class="fragment">Des acteurs identifiés</p>
+							<p class="fragment">Rôles et responsabilités dans l'usine logicielle</p>
+							<p class="fragment">Rôles et responsabilités sur l'usine logicielle</p>
+					</section>
+				</section>	
+				<section id="RexDomaine2">
+					<section id="Best-Practices-SupplyChain-1">
+						<h4>Quelles sont donc les règles & bonnes pratiques d’une supply chain ?</h4>
+						<p class="fragment"><img src="assets/SupplyChain-Prod.png"></p>
+					</section>
+					<section id="Best-Practices-SupplyChain-2">
+						<h4>Quelles sont donc les règles & bonnes pratiques d’une supply chain ?</h4>
+							<p class="fragment">Avoir une MCO / MCS de l'usine logicielle (Recommandation SecNumCloud)</p>
+							<p class="fragment">Upgrade sur scope complet</p>
+							<p class="fragment">Conditions connues de tous les acteurs <br/>(Quand, Pourquoi, à quelle fréquence...)</p>
+							<p class="fragment">MCS : Un processus de suivi et de correction de toutes les vulnérabilités via une cartographie de l’usine logicielle</p>				
+					</section>
+					<section id="Best-Practices-SupplyChain-2">
+						<h4>Quelles sont donc les règles & bonnes pratiques d’une supply chain ?</h4>
+							<p class="fragment">Avoir une matrice bidirectionnelle entre la demande et l’implémentation technique via une traçabilité</p>
+							<p class="fragment">Environnement reproductible</p>
+							<p class="fragment">Environnement prédictible</p>
+							<p class="fragment">Environnement isolé entre la zone d'exploitation des services Cloud et l'usine logicielle (recommandation SecNumCloud)</p>
+					</section>					
+				</section>	
+				<section id="RexDomaine3">
+					<section id="Control-SupplyChain-1">
+						<h4>Quels sont donc les contrôles à réaliser en amont d’une supply chain ?</h4>
+							<p class="fragment">Contrôler les dépendances externes</p>
+							<p class="fragment">Contrôler les contenus des sources</p>
+							<p class="fragment">Contrôler les origines des sources</p>
+							<p class="fragment">Contrôler les artefacts via gestionnaire d’artefacts
+							</p>				
+					</section>
+					<section id="Control-SupplyChain-2">
+						<h4>Comment choisir correctement ses logiciels open-source ?</h4>
+							<p class="fragment">Evaluer cette liste de critères</p>
+							<ul>
+								<li class="fragment">Popularité</li>
+								<li class="fragment">Activité</li>
+								<li class="fragment">Contribution</li>
+								<li class="fragment">Communauté</li>
+								<li class="fragment">Suivi du projet</li>
+								<li class="fragment">Documentation</li>
+								<li class="fragment">Support</li>
+							</ul>
+							<p class="fragment">Attention au facteur temps: Rien n’est immutable dans un projet Communautaire</p>
+					</section>					
+				</section>	
+				<section id="RexDomaine4">
+						<h4>Comment peut-on mettre en place des outils de confiance dans une supply chain ?</h4>
+							<p class="fragment">Contrôler les images utilisées</p>
+							<p class="fragment">Isoler les contenus douteux</p>
+							<p class="fragment">Réaliser ses propres images</p>
+							<p class="fragment">Distribuer ses propres images</p>				
 				</section>
-
-				<section>
-
-					<section>
-					<h2>Coupé d'Internet</h2>
-					<p>Une solution Datascience, totalement déconnectée d'Internet</p>
-					<aside class="notes">Une solution complète pour DataScientists, dans un environnement totalement isolé d'Internet
-					</aside>
-					<br>
+				<section id="RexConclusion">
+					<section id="Conclusion-1">
+					<h4>Comment peut-on conclure pour permettre à nos auditeurs de se lancer dans cette démarche devsecops ?</h4>
+							<p class="fragment">Première étape : Pratiquer un état des lieux</p>
+							<small>
+							<ul>
+								<li class="fragment">Les acteurs de l’usine logicielle, Dev, PM, PO, DevOps sont-ils prêts ?</li>
+								<li class="fragment">L’environnement qui héberge l’usine logicielle est- il de qualité production ?</li>
+								<li class="fragment">Quels sont les outils en place ?
+									<ul>
+										<li class="fragment">Pour détecter les vulnérabilités</li>
+										<li class="fragment">Pour isoler l’usine d’Internet</li>
+										<li class="fragment">Pour avoir un inventaire des dépendances internes et externes</li>
+									</ul>
+								</li>
+							</ul>
+							</small>
 					</section>
-
-					<section>
-						<h2>DaaS</h2>
-						<ul>
-							<li>Bare Metal</li>
-							<li>Des clusters K8S</li>
-							<li>Des clusters Hadoop</li>
-							<li>SQL et NoSQL</li>
-						</ul>
-						<aside class="notes">DAAS (Datacenter As A Service)
-						</aside>
-						<br>
-					</section>
-	
-					<section>
-						<h2>Le cycle de vie</h2>
-						<ul>
-							<li>Installation</li>
-							<li>MCO</li>
-							<li>MCS</li>
-						</ul>
-						<aside class="notes">Comment fait-on vivre ça ?
-						</aside>
-						<br>
-					</section>
-
-					<section>
-						<h2>Un bon gros Nexus</h2>
-						<ul>
-							<li>Repos Debian</li>
-							<li>Docker, Quay</li>
-							<li>Maven Central</li>
-							<li>NPM</li>
-						</ul>
-						<aside class="notes">On va devoir construire un bon gros Nexus qui va contenir tout ce qui sera nécessaire pour l'opération de mise à jour
-						</aside>
-						<br>
-					</section>
-
-					<section>
-						<h2>Répétition des Opérations</h2>
-						<ul>
-							<li>Environnement ISO production</li>
-							<li>Pendant plusieurs jours</li>
-							<li>Construction du Nexus</li>
-							<li>Expédition</li>
-						</ul>
-						<aside class="notes">Tout ceci nécessite un exercice de répétition hors site, qui va notamment servir à remplir le Nexus
-						</aside>
-						<br>
-					</section>
-
-					<section>
-						<h2>Contractuellement</h2>
-						<ul>
-							<li>Prévoir le plan de charge de répétition</li>
-							<li>Préciser l'impact sur les temps de livraison</li>
-						</ul>
-						<aside class="notes">On construit un contrat ad-hoc qui va tenir en compte de la charge particulière induite par le mode déconnecté. En un mot, facturer les activités contraintes par le mode déconnecté.
-						</aside>
-						<br>
-					</section>
-
-				</section>
-
-				<section>
-
-					<section>
-						<h2>Une Usine Logicielle pour SecNumCloud</h2>
-						<p>Les exigences sont déjà nombreuses sur une Usine</p>
-						<p>De nouvelles contraintes apparaissent</p>
-						<aside class="notes">Présenter le cas d'une usine logicielle, telle qu'on la trouverait chez un acteur sans contraintes majeures.
-							Et évoquer quelques contraintes qui viennent dans un environnement sensible
-						</aside>
-					</section>
-
-					<section>
-						<h2>Les exigences</h2>
-						<p>Un environnement niveau production</p>
-						<p>Respect des normes en place ou visées</p>
-						<aside class="notes">Des accès maîtrisés, Backup & Restore (sans restore un backup n'a pas de valeur), PRA / PCA.
-							Suivant les normes acquises ou visées, il y a aure des contraintes plus ou moins fortes, SecNumCloud > HDS > ISO27001 > De base 
-						</aside>
-					</section>
-
-					<section>
-						<h2>Exigences de production</h2>
-						<p>Administrateurs & Utilisateurs</p>
-						<p>Backup et Restore</p>
-						<p>Plan Reprise d'Activité</p>
-						<aside class="notes">Dans toute production, il y a 2 au moins rôles, admins et utilisateurs, comme dans toute prod, chacun connaissances ses frontières de responsabilité. 
-							Une petite piqure de rappel sur les backups et sur la nécessité de faire des restores.
-							Plan de Reprise d'Activité, RPO : Fréquence des backups, ce peut-on perdre,  RTO : Délai pour relancer les services. On doit mettre le curseur au bon niveau, attentes vs moyens
-						</aside>
-					</section>
-
-					<section>
-						<h2>Exigence des normes</h2>
-						<p>ISO : SMSI</p>
-						<p>HDS : Données personnelles</p>
-						<p>SecNumCloud : Pas de GitOps</p>
-					</section>
-
-					<section>
-						<h2>Les contraintes</h2>
-						<p>Isolée de tous les autres environnements</p>
-						<p>Aussi souverain que possible</p>
-						<p>Surveillance des contenus externes</p>
-						<aside class="notes">L'usine doit être isolée de tous les autres envs, la souveraineté peut être un enjeur majeur si l'acteur est gouvernemental, l'ensemble des contenus externes, OS, outils, librairies, images docker sera à surveiller
-						</aside>
-					</section>
-
-					<section>
-						<h2>Contraintes de production</h2>
-						<p>Accès Restreint à l'environnement</p>
-						<p>SRE dédiés</p>
-					</section>
-
-
-					<section>
-						<h2>Contraintes d'isolation</h2>
-						<p>Accès à l'usine via VPN</p>
-						<p>Aucun accès à l'infrastructure</p>
-						<p>UI des services seulement</p>
-						<p>Mise à disposition des logs via Grafana</p>
-					</section>
-
-					<section>
-						<h2>Contraintes de souveraineté</h2>
-						<p>Priorité à des solutions Open Source</p>
-						<p>Préférence pour les solutions à gouvernance communautaire</p>
-						<p>Debian, Openstack, GitLab, Grafana</p>
-						<p>OnPrem plutôt que SaaS</p>
-					</section>
-
-					<section>
-						<h2>Contraintes sur les contenus externes</h2>
-						<p>OSINT sur l’ensemble des projets candidats</p>
-						<p>Dynamique du projet et risques</p>
-						<p>Projets de fondations / fédérations</p>
-					</section>
-
-
-				</section>
-
+					<section id="Conclusion-2">
+						<h4>Comment peut-on conclure pour permettre à nos auditeurs de se lancer dans cette démarche devsecops ?</h4>
+								<p class="fragment">Seconde étape : Bâtir le plan pour être à l’état de l’art</p>
+								<small>
+								<ul>
+									<li class="fragment">L’ensemble des acteurs ont été formés aux risques</li>
+									<li class="fragment">L’usine logicielle suit de solides pratiques de production</li>
+									<li class="fragment">Un gestionnaire d’artefacts est en place, en priorité pour les contenus externes</li>
+									<li class="fragment">L’environnement technique de l’usine logicielle est isolé, notamment d’Internet</li>
+									<li class="fragment">Les pipelines de construction incluent des analyses de vulnérabilité</li>
+									<li class="fragment">Une cartographie des composants embarqués est disponible pour chaque produit</li>
+									<li class="fragment">Des analyses de vulnérabilité sont mises en place sur l’ensemble des environnements</li>
+								</ul>
+								</small>
+								<p class="fragment">Conseil : Il est possible de faire les choses petit à petit, l’important est d’initier, puis de suivre le processus. La vitesse de mise à l’état de l’art dépendra donc des moyens alloués au projet</p>
+					</section>					
+				</section>	
 			</div>
 
 		</div>
