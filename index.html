@@ -41,21 +41,27 @@
 					</p>
 				</section>
 
-				<section>
-					<h2>Avant de commencer</h2>
-					<p>
-						Oui le titre est long comme le bras et on s'en excuse :)
-					</p>
-					<p>
-						Cela dit il porte implicitement une partie des challenges à résoudre.
-					</p>
+				<section id="AvantDeCommencer">
+					<section>
+						<h2>Avant de commencer</h2>
+					</section>
+
+					<section>
+						<p>
+							Oui le titre est long comme le bras et on s'en excuse :)
+						</p>
+					</section>
+
+					<section>
+						<p>
+							Cela dit il porte implicitement une partie des challenges à résoudre.
+						</p>
+					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>Qui sommes nous ?</h2>
-						<p>Mais qui sont les 2 présentateurs ?</p>
-						<br>
 					</section>
 
 					<section>
@@ -76,47 +82,51 @@
 				</section>
 
 				<section id="RexInformation">
-						<section id="ContextPrincipal-1">
-							<h3>Contexte de notre REX</h3>
-							<p class="fragment">Issu de situations bien réelles pour des organisations dont on doit taire le nom (NDA)</p>
-							<p class="fragment">Mettant en oeuvre des chaines devsecops tant pour construire des livrables binaires applicatifs que déployer des plate-formes de services cloud</p>
-						</section>
-						<section id="ContextPrincipal-2">
-							<h3>Répondant à des exigences et contraintes de sécurité fortes</h3>
-							<p class="fragment">EBIOS</p>
-							<p class="fragment">Critères DICP</p>
-							<p class="fragment">Sensibilité / Criticité de la donnée</p>
-							<p class="fragment">Respect de normes ISO 27001 & SecNumCloud</p>
-						</section>
-						<section id="ContextPrincipal-3">
-							<h4>Quel est donc le besoin de construire une plateforme devsecops pour un service cloud ?</h4>
-							<p class="fragment">Provisionner de l’infrastructure</p>
-							<p class="fragment">Déployer des services d'infrastructure</p>
-							<p class="fragment">Ah oui, mais pourquoi une chaine devsecops pour cela ?</p>
-							<p class="fragment">Afin de disposer d'environnement :</p> 
-							<p class="fragment">Reproductible et automatisé</p>
-							<p class="fragment">Auditable, répondant à des exigences de normes de sécurité style NIS</p>
-						</section>
-						<section id="ContextPrincipal-4"> 
-							<h4>En quoi les normes Executive Order de la maison Blanche, NIS, ISO 27001, ont-elles contribué à sécuriser la conception des chaines CICD ?</h4>
-							<p class="fragment">SBOM selon Executive Order</p>
-							<p class="fragment">Contrôles de provenance des sources et des fournisseurs selon NIS & NIS2</p>
-							<p class="fragment">Avoir des processus identifiés et mis en oeuvres au quotidien pour la supply chain pour l'iso 27001</p>
-						</section>
-						<section id="ContextPrincipal-5">
-							<h4>Peux-tu nous en dire plus sur la norme SecNumCloud ?</h4>
-							<p class="fragment">Qualification de sécurité dévelopée par l’ANSSI</p>
-							<p class="fragment">Deux acteurs bien différenciés : Prestataire & Bénéficiaire</p>
-							<p class="fragment">Avantages de la norme </p>
-							<p class="fragment">Points saillants nécessaires à l'obtention</p>
-							<p class="fragment">Principaux critères pour devenir homologable / certifiable SecNumCloud</p>
-						</section>
-						<section id="ContextPrincipal-6">
-							<h4>Peux tu nous rappeler les 3 typologies d'attaque référencées par l'ANSSI ?</h4>
-								<p class="fragment">Stratégique</p>
-								<p class="fragment">Systémique</p>
-								<p class="fragment">Activiste / Isolé </p>
-						</section>
+					<section id="ContextPrincipal-1">
+						<h3>Contexte de notre REX</h3>
+						<p class="fragment fade-in-then-semi-out">Issu de situations bien réelles pour des organisations dont on doit taira les noms (NDA)</p>
+						<p class="fragment fade-in-then-semi-out">Mettant en oeuvre des chaines DevSecOps</p>
+						<p class="fragment fade-in-then-semi-out">Tant pour construire des livrables binaires applicatifs que déployer des plate-formes de services cloud</p>
+					</section>
+					<section id="ContextPrincipal-Sécu">
+						<h3>Répondant à des exigences et contraintes de sécurité fortes</h3>
+						<p class="fragment fade-in-then-semi-out">Expression des besoins et identification des objectifs de sécurité (EBIOS)</p>
+						<p class="fragment fade-in-then-semi-out">Critères Disponibilité, Intégrité, Confidentialité, Preuve (DICP)</p>
+						<p class="fragment fade-in-then-semi-out">Sensibilité / Criticité de la donnée</p>
+						<p class="fragment fade-in-then-semi-out">Respect de normes ISO 27001 & SecNumCloud</p>
+					</section>
+				</section>
+
+<!--
+					<section id="ContextPrincipal-3">
+						<h4>Quel est donc le besoin de construire une plateforme devsecops pour un service cloud ?</h4>
+						<p class="fragment">Provisionner de l’infrastructure</p>
+						<p class="fragment">Déployer des services d'infrastructure</p>
+						<p class="fragment">Ah oui, mais pourquoi une chaine devsecops pour cela ?</p>
+						<p class="fragment">Afin de disposer d'environnement :</p> 
+						<p class="fragment">Reproductible et automatisé</p>
+						<p class="fragment">Auditable, répondant à des exigences de normes de sécurité style NIS</p>
+					</section>
+					<section id="ContextPrincipal-4"> 
+						<h4>En quoi les normes Executive Order de la maison Blanche, NIS, ISO 27001, ont-elles contribué à sécuriser la conception des chaines CICD ?</h4>
+						<p class="fragment">SBOM selon Executive Order</p>
+						<p class="fragment">Contrôles de provenance des sources et des fournisseurs selon NIS & NIS2</p>
+						<p class="fragment">Avoir des processus identifiés et mis en oeuvres au quotidien pour la supply chain pour l'iso 27001</p>
+					</section>
+					<section id="ContextPrincipal-5">
+						<h4>Peux-tu nous en dire plus sur la norme SecNumCloud ?</h4>
+						<p class="fragment">Qualification de sécurité dévelopée par l’ANSSI</p>
+						<p class="fragment">Deux acteurs bien différenciés : Prestataire & Bénéficiaire</p>
+						<p class="fragment">Avantages de la norme </p>
+						<p class="fragment">Points saillants nécessaires à l'obtention</p>
+						<p class="fragment">Principaux critères pour devenir homologable / certifiable SecNumCloud</p>
+					</section>
+					<section id="ContextPrincipal-6">
+						<h4>Peux tu nous rappeler les 3 typologies d'attaque référencées par l'ANSSI ?</h4>
+							<p class="fragment">Stratégique</p>
+							<p class="fragment">Systémique</p>
+							<p class="fragment">Activiste / Isolé </p>
+					</section>
 				</section>
 				<section id="RexDomaine1">
 					<section id="Human-SupplyChain-1">
@@ -207,6 +217,93 @@
 							</ul>
 							</small>
 					</section>
+-->
+
+			<section id="SeulAuMonde">
+
+				<section>
+				<h2>Coupé d'Internet</h2>
+				<img src="assets/seul-au-monde.png" alt="Wilson" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				<p class="fragment fade-in-then-semi-out">Une solution Datascience, totalement déconnectée d'Internet</p>
+				<aside class="notes">Une solution complète pour DataScientists, dans un environnement totalement isolé d'Internet
+				</aside>
+				<br>
+				</section>
+
+				<section>
+					<h2>DaaS</h2>
+					<p class="fragment fade-in-then-semi-out">Bare Metal</p>
+					<p class="fragment fade-in-then-semi-out">Des clusters K8S</p>
+					<p class="fragment fade-in-then-semi-out">Des clusters Hadoop</p>
+					<p class="fragment fade-in-then-semi-out">SQL et NoSQL</p>
+					<aside class="notes">DAAS (Datacenter As A Service)
+					</aside>
+				</section>
+
+				<section>
+					<h2>Le cycle de vie</h2>
+					<p class="fragment fade-in-then-semi-out">Installation</p>
+					<p class="fragment fade-in-then-semi-out">MCO</p>
+					<p class="fragment fade-in-then-semi-out">MCS</p>
+					<aside class="notes">Comment fait-on vivre ça ?
+					</aside>
+				</section>
+
+				<section>
+					<h2>Un bon gros Nexus</h2>
+					<p class="fragment fade-in-then-semi-out">Repos Debian</p>
+					<p class="fragment fade-in-then-semi-out">Docker, Quay</p>
+					<p class="fragment fade-in-then-semi-out">Maven Central</p>
+					<p class="fragment fade-in-then-semi-out">NPM</p>
+					<aside class="notes">On va devoir construire un bon gros Nexus qui va contenir tout ce qui sera nécessaire pour l'opération de mise à jour
+					</aside>
+					<br>
+				</section>
+
+				<section>
+					<h2>Répétition des Opérations</h2>
+					<p class="fragment fade-in-then-semi-out">Environnement ISO production</p>
+					<p class="fragment fade-in-then-semi-out">Pendant plusieurs jours</p>
+					<p class="fragment fade-in-then-semi-out">Construction du Nexus</p>
+					<p class="fragment fade-in-then-semi-out">Expédition du stockage avec le contenu Nexus</p>
+					<aside class="notes">Tout ceci nécessite un exercice de répétition hors site, qui va notamment servir à remplir le Nexus. Envoyer le disque dur bien avant si passage en salle blanche, sur un vieux Pentium sous Windows 2000 par exemple
+					</aside>
+					<br>
+				</section>
+
+				<section>
+					<h2>Opérations sur zone</h2>
+					<p class="fragment fade-in-then-semi-out">On rejoue le plan de la répétition</p>
+					<p class="fragment fade-in-then-semi-out">On note les imprévus et les corrections apportées</p>
+					<p class="fragment fade-in-then-semi-out">On consigne le temps passé sur chaque étape</p>
+					<aside class="notes">On suit le plan, note ce qui ne se passe pas comme prévu et les corrections apportées in situ, pour améliorer la répétition de la prochaine fois
+					</aside>
+					<br>
+				</section>
+
+				<section>
+					<h2>Post Opérations</h2>
+					<p class="fragment fade-in-then-semi-out">On fait le Post Mortem des imprévus</p>
+					<p class="fragment fade-in-then-semi-out">On analyse et trouve le pourquoi</p>
+					<p class="fragment fade-in-then-semi-out">On amende le plan pour la prochaine répétition</p>
+					<aside class="notes">On suit le plan, note ce qui ne se passe pas comme prévu et les corrections apportées in situ, pour améliorer la répétition de la prochaine fois
+					</aside>
+					<br>
+				</section>
+
+				<section>
+					<h2>Contractuellement</h2>
+					<p class="fragment fade-in-then-semi-out">Prévoir le plan de charge de répétition</p>
+					<p class="fragment fade-in-then-semi-out">Préciser l'impact sur les temps de livraison</p>
+					<p class="fragment fade-in-then-semi-out">Chiffrer le déplacement des opérateurs sur zone </p>
+					<aside class="notes">On construit un contrat ad-hoc qui va tenir en compte de la charge particulière induite par le mode déconnecté. En un mot, facturer les activités contraintes par le mode déconnecté.
+					</aside>
+					<br>
+				</section>
+
+			</section>
+
+
 					<section id="Conclusion-2">
 						<h4>Comment peut-on conclure pour permettre à nos auditeurs de se lancer dans cette démarche devsecops ?</h4>
 								<p class="fragment">Seconde étape : Bâtir le plan pour être à l’état de l’art</p>
