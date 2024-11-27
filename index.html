@@ -304,6 +304,114 @@
 			</section>
 
 
+			<section id="Pas d'accès">
+
+				<section>
+				<h2>Valse à 4 mains</h2>
+				<img src="assets/deux-ings-au-tel.png" alt="Wilson" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				<p class="fragment fade-in-then-semi-out">Intervenir ... sans accès</p>
+				<aside class="notes">La solution est déployée loin mais pas opérable à distance
+				</aside>
+				<br>
+				</section>
+
+				<section>
+					<h2>Allo Huston ?</h2>
+					<p class="fragment fade-in-then-semi-out">Un appel client au support</p>
+					<p class="fragment fade-in-then-semi-out">L'application ne marche pas</p>
+					<p class="fragment fade-in-then-semi-out">Dites m'en plus ?</p>
+					<p class="fragment fade-in-then-semi-out">On n'a plus rien sur la page web</p>
+					<aside class="notes">Ben ça marche plus ....
+					</aside>
+				</section>
+
+				<section>
+					<h2>Primo diagnostic</h2>
+					<p class="fragment fade-in-then-semi-out">Que voyez-vous ?</p>
+					<p class="fragment fade-in-then-semi-out">Rien</p>
+					<p class="fragment fade-in-then-semi-out">Qu'avez-vous changé ou fait ?</p>
+					<p class="fragment fade-in-then-semi-out">Rien, c'est tombé en marche</p>
+					<aside class="notes">pas trop de détails
+					</aside>
+				</section>
+
+				<section>
+					<h2>Le SRE à la rescousse</h2>
+					<p class="fragment fade-in-then-semi-out">Ici le SRE, support niveau 2</p>
+					<p class="fragment fade-in-then-semi-out">On va devoir se connecter sur le serveur</p>
+					<p class="fragment fade-in-then-semi-out">Pour voir l'état des services</p>
+					<p class="fragment fade-in-then-semi-out">Désolé, c'est interdit</p>
+					<aside class="notes">Il va falloir aller voir sur le serveur mais c'est interdit
+					</aside>
+				</section>
+
+				<section>
+					<h2>La valse commence</h2>
+					<p class="fragment fade-in-then-semi-out">Nous avons des données sensibles</p>
+					<p class="fragment fade-in-then-semi-out">Nous ne pouvons vous donner accès</p>
+					<p class="fragment fade-in-then-semi-out">Vous allez devoir nous guider</p>
+					<p class="fragment fade-in-then-semi-out">On commence par quoi ?</p>
+					<aside class="notes">Tout ceci nécessite un exercice de répétition hors site, qui va notamment servir à remplir le Nexus. Envoyer le disque dur bien avant si passage en salle blanche, sur un vieux Pentium sous Windows 2000 par exemple
+					</aside>
+				</section>
+
+				<section>
+					<h2>On se connecte</h2>
+					<p class="fragment fade-in-then-semi-out">Connectez vous par SSH sur l'IP 192.168.1.10</p>
+					<p class="fragment fade-in-then-semi-out">On est sous Windows, on fait comment ?</p>
+					<p class="fragment fade-in-then-semi-out">Installez Putty</p>
+					<p class="fragment fade-in-then-semi-out">Je suis connecté, je tape quoi ?</p>
+					<aside class="notes">C'est parti mon kiki
+					</aside>
+				</section>
+
+				<section>
+					<h2>Vous prendez bien un peu de kubectl ?</h2>
+					<p class="fragment fade-in-then-semi-out">On va déjà vérifier que les nodes sont tous up</p>
+					<p class="fragment fade-in-then-semi-out">Tapez kubectl get nodes</p>
+					<p class="fragment fade-in-then-semi-out">C'est fait </p>
+					<p class="fragment fade-in-then-semi-out">Ca dit quoi ?</p>
+					<p class="fragment fade-in-then-semi-out">Euh, ça fait une page, vous voulez quoi ?</p>
+					<aside class="notes">kubectl serait verbeux ?
+					</aside>
+				</section>
+
+				<section>
+					<h2>Vous reprendez bien un peu de kubectl ?</h2>
+					<p class="fragment fade-in-then-semi-out">vérifions les pods, Tapez kubectl get pods</p>
+					<p class="fragment fade-in-then-semi-out">....</p>
+					<p class="fragment fade-in-then-semi-out">Allons voir les logs du front, Tapez kubectl logs nginx2 </p>
+					<p class="fragment fade-in-then-semi-out">...</p>
+					<aside class="notes">kubectl serait verbeux ?
+					</aside>
+				</section>
+
+
+				<section>
+					<h2>Bien plus tard à Veracrux</h2>
+					<p class="fragment fade-in-then-semi-out">le stockage est plein, faisons le ménage</p>
+					<p class="fragment fade-in-then-semi-out">....</p>
+					<p class="fragment fade-in-then-semi-out">Pouvez-vous vérifier que tout fonctionne ?</p>
+					<p class="fragment fade-in-then-semi-out">C'est bon, merci à vous</p>
+					<p class="fragment fade-in-then-semi-out">Parfait, on s'en est sorti en moins de 3h</p>
+					<aside class="notes">Voila voima
+					</aside>
+				</section>
+
+				<section>
+					<h2>La suite</h2>
+					<p class="fragment fade-in-then-semi-out">On revoit le contrat</p>
+					<p class="fragment fade-in-then-semi-out">En incluant une intervention à distance</p>
+					<p class="fragment fade-in-then-semi-out">Avec des opérateurs qui ont signés des NDA</p>
+					<p class="fragment fade-in-then-semi-out">Pour qu'une opération de 5mn ne prenne plus 3h</p>
+					<aside class="notes">On amende le contrat que s'assurer que les opérations prennent le juste temps. Réduire l'indispo du service mais aussi le temps d'intervention de vos équipes
+					</aside>
+					<br>
+				</section>
+
+			</section>
+
+			
 					<section id="Conclusion-2">
 						<h4>Comment peut-on conclure pour permettre à nos auditeurs de se lancer dans cette démarche devsecops ?</h4>
 								<p class="fragment">Seconde étape : Bâtir le plan pour être à l’état de l’art</p>
